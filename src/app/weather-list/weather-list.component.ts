@@ -33,6 +33,7 @@ export class WeatherListComponent {
   }
 
 
+
   getWeatherIconUrl(iconCode: string): string {
     return 'https://openweathermap.org/img/wn/${iconCode}@2x.png';
   }
