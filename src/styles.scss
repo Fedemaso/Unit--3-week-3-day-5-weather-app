@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background-image: url(https://cdn.create.vista.com/api/media/small/215074526/stock-photo-weather-forecast-background-variety-weather);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
