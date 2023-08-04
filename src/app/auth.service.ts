@@ -7,8 +7,7 @@ export class AuthService {
   private authenticated = false;
 
   login(username: string, password: string) {
-    // Implement your authentication logic here
-    // For simplicity, just set authenticated to true
+    // Implementare logica autenticazione qui
     this.authenticated = true;
   }
 
