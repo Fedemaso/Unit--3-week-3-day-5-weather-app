@@ -9,7 +9,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { SignupComponent } from './signup/signup.component';
     CitySearchComponent,
     FavoritesComponent,
     LoginComponent,
-    SignupComponent,
+
 
   ],
   imports: [
