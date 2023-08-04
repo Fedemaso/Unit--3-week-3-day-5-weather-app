@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FavoriteService {
-  private apiUrl = 'http://localhost:3000';
+  private favoriteCities: any[] = [];
+  private favoritesSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
+  favoriteService: any;
 
-  constructor(private http: HttpClient) { }
+  addToFavorites(cityInfo: any) {
+    this.favoriteCities.push(cityInfo);
+  }
 
-  getFavorites(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/favorites`);
+
+
+  getFavorites() {
+    return this.favoritesSubject.asObservable();
   }
 }
